@@ -99,8 +99,8 @@ export default function App() {
         <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-green-400 mb-6 text-center">
           Task Manager
         </h1>
-        <TaskInput addTask={addTask} />
-        <TaskList tasks={tasks} toggleTask={toggleTask} editTask={editTask} deleteTask={deleteTask} />
+        <TaskInput onAddTask={addTask} />
+        <TaskList tasks={tasks} deleteTask={deleteTask} editTask={editTask} />
       </div>
     </div>
   );
